@@ -1,0 +1,15 @@
+<view class="container-box">
+    <view class="img-box">
+        <text style="margin-top:10px; display: flex; justify-content: center;  color: #545454;font-size: 24px;font-weight:300;">{{textQR}}</text>
+        <image style='margin-left:{{pdleft}}; margin-top:50rpx;' bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}"></image>
+    </view>
+    <form bindsubmit="formSubmit">
+        <button formType="submit" class="mybtn" type="primary">刷新二维码</button>
+    </form>
+    <button class="unlockbtn" type="primary"  bindtap="qrUnlock" >扫码开锁</button> 
+</view>
+<view hidden="{{maskHidden}}" class="mask"></view>
+<view class="canvas-box">
+  <canvas  hidden="{{canvasHidden}}" style="width: 686rpx;height: 500rpx;background:#f1f1f1;" canvas-id="mycanvas"/>
+</view>  
+<!-->background:#f1f1f1<-->

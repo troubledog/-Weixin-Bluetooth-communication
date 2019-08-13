@@ -1,0 +1,43 @@
+<!--login.wxml-->
+
+
+<view class="container" wx:if="{{canIUse}}"> 
+ <!--view class="login-icon"> 
+ <image class="login-img" src="../../img/mebg.png"></image> 
+ </view--> 
+
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<view class="page-body-info ">
+<open-data type='userAvatarUrl' class="userinfo" mode="cover"></open-data>
+<open-data type="userNickName"  ></open-data> 
+</view>
+
+
+ <view class="login-from"> 
+  
+ <!--手机号-->
+ <view class="inputView"> 
+  <image class="nameImage" src="../../img/name.png"></image> 
+  <label class="loginLab">手机号</label> 
+  <input class="inputText" placeholder="请输入手机号" bindinput="phoneInput" /> 
+ </view> 
+ <view class="line"></view> 
+  
+ <!--验证码password="false"-->
+ <view class="inputView"> 
+  <image class="keyImage" src="../../img/key.png"></image> 
+  <label class="loginLab">验证码</label> 
+  <input class="inputText"  placeholder="请输入验证码" bindinput="identifyInput" /> 
+ </view> 
+  
+ <!--按钮 float:right; bindtap="sySMS"，bindtap="login"，disabled="false"style="display:block;margin:0 auto"-->
+ 
+ <view class="loginBtnView" > 
+   <button class="smsBtn"  style="display:block;margin:0 auto" disabled='{{disabled}}' type="primary" size="mini" plain="true" bindtap="identifySMS">{{codename}}</button> 
+ <!-- 需要使用 button 来授权登录 -->
+  <button class="loginBtn" type="primary" open-type="getUserInfo" size="{{primarySize}}"  plain="{{plain}}"  lang="zh_CN" bindgetuserinfo="bindGetUserInfo" >绑定/解绑</button> 
+ </view> 
+ </view> 
+</view>
+
+<view wx:else>请升级微信版本</view>

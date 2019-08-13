@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/apply/apply",
+    "pages/delivery/delivery",
+    "pages/device/device"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3366cc",
+    "navigationBarTitleText": "XCRE",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#BEBEBE",
+    "selectedColor": "#3366cc",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "二维码",
+        "iconPath": "img/qrcode.png",
+        "selectedIconPath": "img/qrcode-selected.png"
+      },
+      {
+        "pagePath": "pages/device/device",
+        "text": "设备",
+        "iconPath": "img/device.png",
+        "selectedIconPath": "img/device-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "/img/me.png",
+        "selectedIconPath": "/img/me-selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

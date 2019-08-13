@@ -1,0 +1,129 @@
+/* me.wxss */
+page{ 
+ height: 100%; 
+} 
+
+.container{
+width: 100%;
+height: 405rpx;
+background-color: #ccc;
+display: flex;/*or inline-flex*/
+flex-flow:row wrap;
+justify-content:flex-start;
+align-content: flex-start;
+}
+.item{
+flex:0 0 50%;
+min-height: 202rpx;
+/*background-color:#0dd30d;*/
+}
+.item1{
+flex:0 0 100%;
+min-height: 200rpx;
+/*background-color:#0dd30d;*/
+}
+  
+/*登录图片*/
+.login-icon{ 
+ flex: none; 
+} 
+.login-img{ 
+ /*width: 750rpx; */
+ width:750rpx;
+ height:430rpx; 
+} 
+  
+/*表单内容*/
+.login-from { 
+ margin-top: 15px; 
+ flex: auto; 
+ height:100%; 
+} 
+
+.button1{
+  width: 100%;
+  height: 200rpx;
+  color: rgba(230, 236, 229, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  border-radius: 0rpx;
+  background-color: rgba(52, 177, 10, 0.849);
+  margin-top: 2rpx;   
+  font-family:"Arial";
+  font-weight: bold;
+}
+.button2{
+  width: 100%;
+  height: 200rpx;
+  color: rgba(230, 236, 229, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  border-radius: 0rpx;
+  background-color: rgba(2, 127, 200, 0.849);
+  margin-top: 2rpx; 
+  font-family:"Arial";
+  font-weight: bold;
+}
+.button3{
+  width: 100%;
+  height: 200rpx;
+  color: rgba(230, 236, 229, 0.733);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  border-radius: 0rpx;
+  background-color: rgba(223, 93, 7, 0.849);
+  margin-top: -1rpx; 
+  font-family:"Arial";
+  font-weight: bold;
+}
+.button1::after{ 
+  border: 0;
+}
+.button2::after{ 
+  border: 0;
+}
+.button3::after{ 
+  border: 0;
+}
+/*******
+css 的样式可以写在 style 里面
+
+
+属性
+
+width: fit-content;
+font-size:20px;      //设置文字字号
+color:red;           //设置文字颜色
+font-weight:bold;    //置字体加粗
+border:1px solid red;//添加边框样式（粗细为1px， 颜色为红色的实线）
+font-family:"宋体";   //设置字体为宋体
+
+font-style:italic;    //文字排版--斜体
+text-decoration:underline;   //文字排版--下划线
+text-decoration:line-through;//文字排版--删除线
+text-indent:2em;             //段落排版--缩进
+line-height:1.5em;           //段落排版--行间距（行高）
+display:inline-flex;        //将对象作为内联块级弹性伸缩盒显示
+display:block;              //设置为块状元素
+display:inline;             //设置为内联元素
+display:inline-block;       //设置为内联块状元
+
+word-break:keep-all;        // 不换行 
+white-space:nowrap;         // 不换行 
+vertical-align:middle;     //把此元素放置在父元素的中部。
+
+border-style（边框样式）常见样式有：  （border-color,border-width） 边框相关设置
+dashed（虚线）| dotted（点线）| solid（实线）。
+border-bottom border-top border-right border-left 上下左右线单独设置
+
+box-sizing: border-box; //当使用padding的时候不影响大小
+padding-top padding-right padding-bottom padding-left
+margin-top margin-right margin-bottom margin-left (margin:10px 10px 10px 10px; top、right、bottom、left)
+
+**/

@@ -1,0 +1,85 @@
+/* login.wxss */
+page{ 
+ height: 100%; 
+} 
+  
+.container { 
+ height: 100%; 
+ display: flex; 
+ flex-direction: column; 
+ padding: 0; 
+ box-sizing: border-box; 
+ background-color: #f2f2f2
+} 
+  
+/*登录图片*/
+.login-icon{ 
+ flex: none; 
+} 
+.login-img{ 
+ /*width: 750rpx; */
+ width:750rpx;
+ height:430rpx; 
+} 
+  
+/*表单内容*/
+.login-from { 
+ margin-top: 15px; 
+ flex: auto; 
+ height:100%; 
+} 
+  
+.inputView { 
+ background-color: #fff; 
+ line-height: 44px; 
+ /*width: 100%; */
+ width:650rpx;
+} 
+/*输入框*/
+.nameImage, .keyImage { 
+ margin-left: 22rpx; 
+ width: 14px; 
+ height: 14px;
+} 
+  
+.loginLab { 
+ margin: 15px 15rpx 15px 10rpx; 
+ width: 100px;
+ color: #545454; 
+ font-size: 14px;
+} 
+
+.inputText { 
+ flex: block; 
+ float: right; 
+ text-align: right;
+ margin-right: 22rpx; 
+ margin-top: 10px;
+ width:300rpx;
+ /*color: #cccccc; */
+ color: #545454;
+ font-size: 14px;
+} 
+
+.line { 
+ width: 650rpx; 
+ height: 1px; 
+ background-color: #cccccc; 
+ margin-top: 0px; 
+} 
+/*按钮*/
+.loginBtnView { 
+ width: 100%; 
+ height: auto; 
+ background-color: #f2f2f2; 
+} 
+  
+.loginBtn { 
+ /*width: 80%; */
+ margin-top: 5px; 
+}
+
+.smsBtn { 
+ /*width: 80%; */
+ margin-top: 5px;
+}

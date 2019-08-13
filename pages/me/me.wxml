@@ -1,0 +1,30 @@
+<!-- me.wxml-->
+<view class="container" wx:if="{{canIUse}}"> 
+ <view class="login-icon"> 
+ <image class="login-img" src="../../img/mebg.png"></image> 
+ </view> 
+
+ <view class="item">
+
+ <button class="button1" hover-class="btn-hover" bindtap="meApply">申  请</button>
+ </view>
+ <view class="item">
+
+ <button class="button2" hover-class="btn-hover" bindtap="meHistory" >历  史</button> 
+ </view>
+ <view class="item1">
+
+ <button class="button3" hover-class="btn-hover" bindtap="meInfo" >信  息</button> 
+ </view>
+ <!--view class="login-from"> 
+  
+ 
+ <view class="loginBtnView" > 
+   <button class="smsBtn"  style="display:block;margin:0 auto" disabled='{{disabled}}' type="primary" size="mini" plain="true" bindtap="identifySMS">{{codename}}</button> 
+ 
+  <button class="loginBtn" type="primary" open-type="getUserInfo" size="{{primarySize}}"  plain="{{plain}}"  lang="zh_CN" bindgetuserinfo="bindGetUserInfo" >绑定/解绑</button> 
+ </view> 
+ </view--> 
+</view>
+
+<view wx:else>请升级微信版本</view>
