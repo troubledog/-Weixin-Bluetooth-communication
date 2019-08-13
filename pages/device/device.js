@@ -99,8 +99,8 @@ Page({
             switch (res.data.state) {
               case 1:
                 wx.showModal({
-                  title: snquery.Barcode,
-                  content: res.data.data.CustomerCompany + '\r\n' + res.data.data.CustomerName + '\r\n'+ res.data.data.DateTime + '\r\n',
+                  title: snquery.Barcode.toUpperCase(),
+                  content: res.data.data.CustomerCompany + '\r\n' + res.data.data.bm + '  ' + res.data.data.mc + '\r\n'+ res.data.data.DateTime + '\r\n',
                   icon: 'success',
                   showCancel: false,
                   confirmText: 'OK'
