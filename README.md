@@ -1,2 +1,2 @@
 # weixin
-Weixin Program
+Weixin  Bluetooth communication / Mini-Program
